@@ -36,7 +36,7 @@ const ChatScreen: React.FC = () => {
     // Format bold text (e.g., **bold**)
     content = content.replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold">$1</strong>');
     // Format code blocks (e.g., ```code block```)
-    content = content.replace(/```(.*?)```/gs, '<pre class="bg-darkAccent text-white p-2 rounded">$1</pre>');
+    content = content.replace(/```(.*?)```/g, '<pre class="bg-darkAccent text-white p-2 rounded">$1</pre>');
     // Format line breaks for readability
     content = content.replace(/\n/g, '<br/>');
     return content;

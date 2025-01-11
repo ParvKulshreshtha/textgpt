@@ -19,3 +19,20 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+/* Hide scrollbar and allow scrolling on Webkit browsers */
+* {
+  overflow: scroll;
+}
+
+*::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+/* Firefox scrollbar removal (if needed) */
+* {
+  scrollbar-width: none; /* Firefox */
+}
+
